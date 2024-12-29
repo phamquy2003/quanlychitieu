@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746257985665",
+    "project_id": "quanlychitieu-e9883",
+    "storage_bucket": "quanlychitieu-e9883.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746257985665:android:32dd7eaa9c648249939d80",
+        "android_client_info": {
+          "package_name": "tlu.cse.android.ht63.quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDADMXLZ2UQpJlCtPAk1PMyzOz2At9O3eY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
