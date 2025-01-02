@@ -7,19 +7,47 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="tlu.cse.android.ht63.quanlychitieu.ui.home.HomeFragment"
+        android:name="com.google.BTL_Quanlychitieu.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="tlu.cse.android.ht63.quanlychitieu.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_chi"
+        android:name="com.google.BTL_Quanlychitieu.ui.Chi.FrangmentChi"
+        android:label="Khoản chi"
+        tools:layout="@layout/fragment_frangment_chi" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="tlu.cse.android.ht63.quanlychitieu.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_thu"
+        android:name="com.google.BTL_Quanlychitieu.ui.Thu.FragmentThu"
+        android:label="Khoản thu"
+        tools:layout="@layout/fragment_frangment_thu" />
+
+    <fragment
+        android:id="@+id/nav_gioithieu"
+        android:name="com.google.BTL_Quanlychitieu.ui.Gioithieu.Fragment_Gioithieu"
+        android:label="Giới thiệu"
+        tools:layout="@layout/fragment__gioithieu" />
+    <fragment
+        android:id="@+id/nav_thongke"
+        android:name="com.google.BTL_Quanlychitieu.ui.Thongke.Frangment_Thongke"
+        android:label="Thống kê"
+        tools:layout="@layout/fragment_frangment__thongke" />
+
+    <fragment
+        android:id="@+id/nav_diendan"
+        android:name="com.google.BTL_Quanlychitieu.ui.Diendan.DiendanFragment"
+        android:label="Bot Chat AI"
+        tools:layout="@layout/fragment_diendan"/>
+
+    <fragment
+        android:id="@+id/nav_lienhe"
+        android:name="com.google.BTL_Quanlychitieu.ui.Lienhe.Lienhe"
+        android:label="Liên hệ với chúng tôi"
+        tools:layout="@layout/fragment_lienhe"/>
+    <fragment
+        android:id="@+id/nav_thongtinntaikhoan"
+        android:name="com.google.BTL_Quanlychitieu.ui.Thongtintaikhoan.Thongtintaikhoan"
+        android:label="Thông tin tài khoản"
+        tools:layout="@layout/fragment_thongtintaikhoan"/>
 </navigation>
