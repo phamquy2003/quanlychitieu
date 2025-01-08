@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="16dp"
+    android:outlineSpotShadowColor="@color/black"
+    android:outlineAmbientShadowColor="@color/black"
+    android:outlineProvider="background"
+    >
+
+    <TextView
+        android:id="@+id/tv_loaikhoanchi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:text="Loại khoản chi"
+        android:background="@drawable/bg_gray_corner16_gray"
+        android:textSize="30dp"></TextView>
+
+</androidx.cardview.widget.CardView>

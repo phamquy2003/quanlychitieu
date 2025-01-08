@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:outlineSpotShadowColor="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#60AFEFA8"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_makhoanthuchi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="mã khoản thu chi"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="5dp">
+        </TextView>
+        <TextView
+            android:id="@+id/sotienthuchi"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="200 000 VND"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            android:padding="5dp"
+            android:textSize="30dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/tv_tenkhoanthuchi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="tiền mạng"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textSize="15dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_thoigianthuchi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="18-01-2003  17:36"
+            android:textColor="#9C99A3"
+            android:padding="5dp"
+            android:textSize="15dp"
+            >
+        </TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

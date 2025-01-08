@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    android:scrollbarSize="10sp"
+    android:textAlignment="viewEnd"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tb_ngaythang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:padding="5dp"
+                android:text="Tháng 01 năm 2003"
+                android:textAlignment="center"
+                android:textColor="#09165A"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:padding="5sp"
+                    android:text="Tổng thu:"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#4CAF50"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tb_tongthu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:padding="10sp"
+                    android:paddingStart="20sp"
+                    android:text="18012003 VND"
+                    android:textAlignment="viewStart"
+                    android:textColor="#4CAF50"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:padding="5sp"
+                    android:text="Tổng chi:"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#CA1808"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/tb_tongchi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:padding="10sp"
+                    android:paddingStart="20sp"
+                    android:text="-18012003 VND"
+                    android:textAlignment="viewStart"
+                    android:textColor="#CA1808"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:padding="5sp"
+                    android:text="Dự kiến:"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#D622FF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/tb_dukien"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:padding="10sp"
+                    android:paddingStart="20sp"
+                    android:text="+10000 VND"
+                    android:textAlignment="viewStart"
+                    android:textColor="#D622FF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_corner_16_topleft_topright"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tongngansach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Ngân sách: 10000000 VND"></TextView>
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp">
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/tv_ngansachdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Ngân sách: 10000000 VND"
+                    android:textAlignment="textEnd"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#BEFFC107"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tóm tắt khoản thu"
+                android:textStyle="bold"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:padding="5dp">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_thu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#D1FFC107"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tóm tắt khoản chi"
+                android:textStyle="bold"
+                android:fontFamily="@font/adamina"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:padding="5dp">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#D1FFC107"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Khoản chi dự Kiến"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/adamina"
+                    android:textColor="@color/white"
+                    android:padding="5dp">
+                </TextView>
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="right"
+                    android:text="Add">
+                </Button>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chidukien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
